@@ -53,7 +53,7 @@
       event.preventDefault();
       var status = form.querySelector("[data-form-status]");
       if (status) {
-        status.textContent = "This form is a preview and does not send messages yet. A contact email and phone, marked TBD on this page, will be added once they are chosen.";
+        status.textContent = "This form is a preview and does not send messages yet. Please call (346) 977-1698. A contact email is shown as the placeholder hello@[your-domain] until a company domain is chosen.";
       }
     });
   });

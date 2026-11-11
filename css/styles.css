@@ -238,6 +238,28 @@ header {
   color: var(--muted);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.header-call {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.header-call:hover {
+  color: var(--copper);
+}
+
+.header-call-bar {
+  display: none;
+}
+
 .nav-toggle {
   display: none;
   width: 2.6rem;
@@ -453,6 +475,10 @@ header {
 
 .section {
   padding: clamp(3.5rem, 8vw, 6rem) 0;
+}
+
+section[id] {
+  scroll-margin-top: 6.5rem;
 }
 
 .section-head {
@@ -1070,6 +1096,11 @@ footer li {
 /* Responsive */
 
 @media (max-width: 900px) {
+  .header-call-bar {
+    display: inline;
+    font-size: 0.88rem;
+  }
+
   .nav-toggle {
     display: inline-block;
   }
@@ -1128,6 +1159,10 @@ footer li {
 }
 
 @media (max-width: 600px) {
+  .header-call-bar {
+    font-size: 0.8rem;
+  }
+
   .wrap {
     width: min(calc(100% - 1.5rem), var(--wrap));
   }

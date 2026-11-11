@@ -15,7 +15,7 @@ Live preview (hidden from search engines): https://chukwuemekakalu1905.github.io
 
 ## Before launch
 
-1. Choose a company domain and business phone, then replace the placeholder contact details (`hello@[your-domain]` and phone **TBD**).
+1. Choose a company domain, then replace the placeholder email (`hello@[your-domain]`). The business phone is already listed as (346) 977-1698.
 2. Add Stripe Payment Links in `js/config.js` (`STRIPE_LINKS`). Leave a value as `#` to keep the “Payments coming soon” state.
 3. Have a lawyer review the terms and privacy pages.
 4. Point a custom domain at GitHub Pages when ready. This project uses relative paths and does not include a `CNAME` file yet.
