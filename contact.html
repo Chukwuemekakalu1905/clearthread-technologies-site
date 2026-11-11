@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!--
+  CSP note: frame-ancestors cannot be set via a meta tag (browsers ignore it there).
+  When this site moves to a custom domain, send Content-Security-Policy as an HTTP
+  header and include frame-ancestors 'none'.
+-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
+<meta name="description" content="Get in touch with ClearThread Technologies about a website for your Phoenix-area business. Contact details are marked TBD until a domain and phone number are chosen.">
+<title>Contact — ClearThread Technologies</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview-banner">Preview site — payments and official contact details are not live yet.</div>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.svg" width="36" height="36" alt="">
+      <span class="logo-text">
+        <span class="logo-name">ClearThread</span>
+        <span class="logo-sub">Technologies</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span>
+    </button>
+    <nav class="menu" id="site-menu">
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#plans">Plans</a>
+      <a href="portfolio.html">Work</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-primary" href="subscribe.html">Get started</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Tell us about your business.</h1>
+      <p>The form on this preview site does not send messages. Official email and phone details will appear here once they are chosen, and are marked TBD until then.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>How to reach us</h2>
+        <ul class="contact-meta">
+          <li><span>Email</span> <span class="tbd">hello@[your-domain]</span> — placeholder only; a company domain has not been chosen yet.</li>
+          <li><span>Phone</span> <span class="tbd">TBD</span> — a business line has not been chosen yet.</li>
+          <li><span>Area</span> Phoenix metro, Arizona</li>
+        </ul>
+        <p class="muted">If you already know which plan you want, you can also review plans on the subscribe page. Payments are not live yet.</p>
+      </div>
+      <form data-mock action="#" method="post">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="business">Business name</label>
+          <input id="business" name="business" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="interest">I am interested in</label>
+          <select id="interest" name="interest">
+            <option value="starter">Starter plan</option>
+            <option value="standard">Standard plan</option>
+            <option value="commerce">Commerce / ordering</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send a message</button>
+        <p class="form-status" data-form-status role="status">This form does not send messages yet. Contact details are marked TBD until a domain and phone number are chosen.</p>
+      </form>
+
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <img src="assets/logo.svg" width="36" height="36" alt="">
+          <span class="logo-text">
+            <span class="logo-name">ClearThread</span>
+            <span class="logo-sub">Technologies</span>
+          </span>
+        </a>
+        <p class="footer-blurb">Websites for local shops and clinics in the Phoenix metro — built, hosted, and kept up for you.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#plans">Plans</a></li>
+          <li><a href="portfolio.html">Concept work</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="client.html">Client portal</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <span class="tbd">hello@[your-domain]</span></li>
+          <li>Phone: <span class="tbd">TBD</span></li>
+          <li>Phoenix metro, Arizona</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 ClearThread Technologies LLC. All rights reserved.</span>
+      <span>This site is a pre-launch preview and is hidden from search engines.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
