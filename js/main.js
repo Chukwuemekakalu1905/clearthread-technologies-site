@@ -20,40 +20,12 @@
     });
   }
 
-  function markComingSoon(anchor) {
-    anchor.setAttribute("href", "#");
-    anchor.setAttribute("aria-disabled", "true");
-    anchor.classList.add("is-disabled");
-    anchor.addEventListener("click", function (event) {
-      event.preventDefault();
-    });
-    var note = document.createElement("p");
-    note.className = "pay-soon";
-    note.textContent = "Payments coming soon";
-    if (anchor.parentNode) {
-      anchor.parentNode.appendChild(note);
-    }
-  }
-
-  var links = typeof STRIPE_LINKS === "object" && STRIPE_LINKS ? STRIPE_LINKS : {};
-  document.querySelectorAll("[data-plan]").forEach(function (el) {
-    var plan = el.getAttribute("data-plan");
-    var url = links[plan];
-    if (!url || url === "#") {
-      markComingSoon(el);
-      return;
-    }
-    el.setAttribute("href", url);
-    el.setAttribute("target", "_blank");
-    el.setAttribute("rel", "noopener noreferrer");
-  });
-
   document.querySelectorAll("form[data-mock]").forEach(function (form) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var status = form.querySelector("[data-form-status]");
       if (status) {
-        status.textContent = "This form is a preview and does not send messages yet. Please call (346) 977-1698. A contact email is shown as the placeholder hello@[your-domain] until a company domain is chosen.";
+        status.textContent = "This form does not send messages. Please call or text (346) 977-1698, or email clearthreadtechnologies@gmail.com.";
       }
     });
   });

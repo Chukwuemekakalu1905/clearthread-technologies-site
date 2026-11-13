@@ -39,7 +39,7 @@
   --white: #ffffff;
   --banner: #1a120b;
   --radius: 16px;
-  --wrap: 1120px;
+  --wrap: 1240px;
   --header: 4.5rem;
   --sans: "Instrument Sans", system-ui, sans-serif;
   --serif: "Instrument Serif", Georgia, serif;
@@ -585,9 +585,15 @@ section[id] {
 
 .plans {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
   align-items: stretch;
+}
+
+@media (max-width: 1100px) {
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .plan {
@@ -660,6 +666,71 @@ section[id] {
 
 .plan-featured .price-setup {
   color: #cfc7b8;
+}
+
+.price-annual {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: -0.55rem 0 1rem;
+}
+
+.plan-featured .price-annual {
+  color: #cfc7b8;
+}
+
+.coming-soon {
+  display: inline-block;
+  margin-left: 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--copper-soft);
+  color: var(--ink);
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+.plan-cta {
+  margin-top: auto;
+}
+
+.plan-cta-lead {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.55rem;
+  color: var(--ink);
+}
+
+.plan-featured .plan-cta-lead {
+  color: var(--paper);
+}
+
+.plan-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.plan-cta-buttons .btn {
+  flex: 1 1 5.5rem;
+}
+
+.plan-featured .btn-outline {
+  color: var(--paper);
+  border-color: rgba(246, 242, 234, 0.35);
+}
+
+.plan-featured .btn-outline:hover {
+  background: rgba(246, 242, 234, 0.08);
+  color: var(--paper);
+  border-color: rgba(246, 242, 234, 0.55);
+}
+
+.terms-note {
+  margin-top: 0.75rem;
 }
 
 .plan ul {

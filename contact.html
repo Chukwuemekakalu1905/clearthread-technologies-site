@@ -18,7 +18,7 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="preview-banner">Preview site — payments are not live yet, and a contact email is still a placeholder.</div>
+<div class="preview-banner">Preview site — hidden from search engines. Call or text (346) 977-1698 to get started.</div>
 <header>
   <div class="wrap nav">
     <a class="logo" href="index.html">
@@ -50,7 +50,7 @@
     <div class="wrap">
       <p class="eyebrow">Contact</p>
       <h1>Tell us about your business.</h1>
-      <p>The form on this preview site does not send messages. You can call (346) 977-1698. A contact email is shown as the placeholder hello@[your-domain] until a company domain is chosen.</p>
+      <p>The form on this site does not send messages. Call or text (346) 977-1698, or email clearthreadtechnologies@gmail.com.</p>
     </div>
   </section>
   <section class="section">
@@ -58,13 +58,13 @@
       <div>
         <h2>How to reach us</h2>
         <ul class="contact-meta">
-          <li><span>Email</span> <span class="tbd">hello@[your-domain]</span> — placeholder only; a company domain has not been chosen yet.</li>
-          <li><span>Phone</span> <a href="tel:+13469771698">(346) 977-1698</a></li>
+          <li><span>Email</span> <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a></li>
+          <li><span>Phone</span> <a href="tel:+13469771698">(346) 977-1698</a> · <a href="sms:+13469771698">Text this number</a></li>
           <li><span>Area</span> Phoenix metro, Arizona</li>
         </ul>
-        <p class="muted">If you already know which plan you want, you can also review plans on the subscribe page. Payments are not live yet.</p>
+        <p class="muted">If you already know which plan you want, you can also review plans and call or text from the get-started page.</p>
       </div>
-      <form data-mock action="#" method="post">
+      <form data-mock method="post">
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>
@@ -84,9 +84,10 @@
         <div class="field">
           <label for="interest">I am interested in</label>
           <select id="interest" name="interest">
+            <option value="diy">DIY Self-Edit plan</option>
             <option value="starter">Starter plan</option>
-            <option value="standard">Standard plan</option>
-            <option value="commerce">Commerce / ordering</option>
+            <option value="standard" selected>Standard plan</option>
+            <option value="plus">Plus plan</option>
             <option value="other">Something else</option>
           </select>
         </div>
@@ -95,7 +96,7 @@
           <textarea id="message" name="message"></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send a message</button>
-        <p class="form-status" data-form-status role="status">This form does not send messages yet. Please call <a href="tel:+13469771698">(346) 977-1698</a>. A contact email is shown as the placeholder hello@[your-domain] until a company domain is chosen.</p>
+        <p class="form-status" data-form-status role="status">This form does not send messages. Please call or text <a href="tel:+13469771698">(346) 977-1698</a>, or email <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a>.</p>
       </form>
 
     </div>
@@ -135,7 +136,7 @@
       <div>
         <h2>Contact</h2>
         <ul>
-          <li>Email: <span class="tbd">hello@[your-domain]</span></li>
+          <li>Email: <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a></li>
           <li>Phone: <a href="tel:+13469771698">(346) 977-1698</a></li>
           <li>Phoenix metro, Arizona</li>
         </ul>
@@ -147,7 +148,6 @@
     </div>
   </div>
 </footer>
-<script src="js/config.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
