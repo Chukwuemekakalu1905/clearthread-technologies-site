@@ -25,7 +25,7 @@
       event.preventDefault();
       var status = form.querySelector("[data-form-status]");
       if (status) {
-        status.textContent = "This form does not send messages. Please call or text (346) 977-1698, or email clearthreadtechnologies@gmail.com.";
+        status.textContent = "This form does not send messages. Please call or text (346) 977-1698, or also text or call (480) 573-2943, or email clearthreadtechnologies@gmail.com.";
       }
     });
   });
