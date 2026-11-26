@@ -3,22 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <!--
   CSP note: frame-ancestors cannot be set via a meta tag (browsers ignore it there).
   When this site moves to a custom domain, send Content-Security-Policy as an HTTP
   header and include frame-ancestors 'none'.
 -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'self' mailto:; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
 <meta name="description" content="Get in touch with ClearThread Technologies at (346) 977-1698, or also text or call (480) 573-2943, about a website for your Phoenix-area business.">
 <title>Contact — ClearThread Technologies</title>
+<link rel="canonical" href="https://chukwuemekakalu1905.github.io/clearthread-technologies-site/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — ClearThread Technologies">
+<meta property="og:description" content="Call, text, or email ClearThread Technologies about a website for your Phoenix-area business.">
+<meta property="og:url" content="https://chukwuemekakalu1905.github.io/clearthread-technologies-site/contact.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="preview-banner">Preview site — hidden from search engines. Call or text (346) 977-1698 to get started.</div>
 <header>
   <div class="wrap nav">
     <a class="logo" href="index.html">
@@ -50,7 +53,7 @@
     <div class="wrap">
       <p class="eyebrow">Contact</p>
       <h1>Tell us about your business.</h1>
-      <p>The form on this site does not send messages. Call or text (346) 977-1698, or also text or call (480) 573-2943, or email clearthreadtechnologies@gmail.com.</p>
+      <p>Sending opens your email app addressed to clearthreadtechnologies@gmail.com. Or call or text (346) 977-1698, or also text or call (480) 573-2943.</p>
     </div>
   </section>
   <section class="section">
@@ -65,7 +68,7 @@
         </ul>
         <p class="muted">If you already know which plan you want, you can also review plans and call or text from the get-started page.</p>
       </div>
-      <form data-mock method="post">
+      <form action="mailto:clearthreadtechnologies@gmail.com" method="post" enctype="text/plain">
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>
@@ -97,7 +100,7 @@
           <textarea id="message" name="message"></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send a message</button>
-        <p class="form-status" data-form-status role="status">This form does not send messages. Please call or text <a href="tel:+13469771698">(346) 977-1698</a>, or also text or call <a href="tel:+14805732943">(480) 573-2943</a>, or email <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a>.</p>
+        <p class="form-status" data-form-status role="status">Prefer to talk? Call or text <a href="tel:+13469771698">(346) 977-1698</a>, or also text or call <a href="tel:+14805732943">(480) 573-2943</a>, or email <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a>.</p>
       </form>
 
     </div>

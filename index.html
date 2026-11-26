@@ -3,22 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <!--
   CSP note: frame-ancestors cannot be set via a meta tag (browsers ignore it there).
   When this site moves to a custom domain, send Content-Security-Policy as an HTTP
   header and include frame-ancestors 'none'.
 -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; form-action 'self' mailto:; object-src 'none'; base-uri 'self'; upgrade-insecure-requests">
 <meta name="description" content="ClearThread Technologies builds, hosts, and maintains professional websites for shops, clinics, and family businesses in the Phoenix metro.">
 <title>ClearThread Technologies — Websites for Phoenix local businesses</title>
+<link rel="canonical" href="https://chukwuemekakalu1905.github.io/clearthread-technologies-site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ClearThread Technologies — Websites for Phoenix local businesses">
+<meta property="og:description" content="Professional websites for Phoenix shops, clinics, and family businesses — built, hosted, and looked after month to month.">
+<meta property="og:url" content="https://chukwuemekakalu1905.github.io/clearthread-technologies-site/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="preview-banner">Preview site — hidden from search engines. Call or text (346) 977-1698 to get started.</div>
 <header>
   <div class="wrap nav">
     <a class="logo" href="index.html">
@@ -251,23 +254,7 @@
         <p>These are unsolicited concept redesigns we prepared to show the kind of work we do for Phoenix-area businesses. They are not official websites, and we do not claim these businesses as clients.</p>
       </div>
       <div class="portfolio-grid">
-        <article class="project">
-          <div class="frame">
-            <div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div>
-            <div class="frame-screen">
-              <img src="assets/portfolio/3ds-desktop.jpg" width="1280" height="920" alt="Desktop view of the concept redesign for 3D's Discount African Store">
-            </div>
-            <div class="phone">
-              <img src="assets/portfolio/3ds-mobile.jpg" width="780" height="1689" alt="Mobile view of the 3D's Discount African Store concept redesign">
-            </div>
-          </div>
-          <div class="project-copy">
-            <span class="badge">Concept redesign</span>
-            <h3>3D's Discount African Store</h3>
-            <p>A grocery concept for a family-run African market in Glendale and Goodyear, with weekly deals and a clear path to visit or shop.</p>
-            <a href="https://chukwuemekakalu1905.github.io/3ds-african-store/" rel="noopener noreferrer" target="_blank">Open the live preview</a>
-          </div>
-        </article>
+        
         <article class="project">
           <div class="frame">
             <div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -347,7 +334,7 @@
       <div>
         <p class="eyebrow">Contact</p>
         <h2>Tell us about your business.</h2>
-        <p class="muted">Share a little about what you need. The form on this site does not send messages. Please call, text, or email us instead.</p>
+        <p class="muted">Share a little about what you need. Sending opens your email app with the message addressed to us — or call or text instead.</p>
         <ul class="contact-meta">
           <li><span>Email</span> <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a></li>
           <li><span>Phone</span> <a href="tel:+13469771698">(346) 977-1698</a> · <a href="sms:+13469771698">Text this number</a></li>
@@ -355,7 +342,7 @@
           <li><span>Area</span> Phoenix metro, Arizona</li>
         </ul>
       </div>
-      <form data-mock method="post">
+      <form action="mailto:clearthreadtechnologies@gmail.com" method="post" enctype="text/plain">
         <div class="field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" autocomplete="name" required>
@@ -387,7 +374,7 @@
           <textarea id="message" name="message"></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send a message</button>
-        <p class="form-status" data-form-status role="status">This form does not send messages. Please call or text <a href="tel:+13469771698">(346) 977-1698</a>, or also text or call <a href="tel:+14805732943">(480) 573-2943</a>, or email <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a>.</p>
+        <p class="form-status" data-form-status role="status">Prefer to talk? Call or text <a href="tel:+13469771698">(346) 977-1698</a>, or also text or call <a href="tel:+14805732943">(480) 573-2943</a>, or email <a href="mailto:clearthreadtechnologies@gmail.com">clearthreadtechnologies@gmail.com</a>.</p>
       </form>
 
     </div>

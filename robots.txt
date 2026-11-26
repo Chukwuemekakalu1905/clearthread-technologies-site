@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://chukwuemekakalu1905.github.io/clearthread-technologies-site/sitemap.xml

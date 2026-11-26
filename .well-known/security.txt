@@ -1,0 +1,3 @@
+Contact: mailto:clearthreadtechnologies@gmail.com
+Preferred-Languages: en
+Canonical: https://chukwuemekakalu1905.github.io/clearthread-technologies-site/.well-known/security.txt
